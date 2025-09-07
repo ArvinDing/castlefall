@@ -1,0 +1,8 @@
+Goals
+- add scoring
+- ensure disconnect handled properly
+- show and hide word
+- stats
+
+Someday Goals
+- Word bank similarity?
