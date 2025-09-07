@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.button-modern {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #4ade80, #22c55e);
+  border: none;
+  border-radius: 9999px; /* pill-shaped */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+.messages-container {
+  max-height: 100px;        /* fixed height */
+  overflow-y: auto;         /* vertical scroll */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+}
+
+.words-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); /* smaller min width */
+  gap: 0.5rem; /* smaller spacing between words */
+  width: 100%;  
+  margin-top: 1rem;
+  box-sizing: border-box; 
+}
+
+.word-item {
+  padding: 0.5rem;      /* smaller padding */
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-size: 0.8rem;    /* smaller font */
+  font-weight: 500;
+  overflow-wrap: break-word; /* prevent long words from breaking layout */
+}
